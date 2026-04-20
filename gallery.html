@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Gallery - Museum of Culture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .gallery-header {
+            padding-top: 120px;
+            text-align: center;
+        }
+        .back-nav {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="scrolled">
+        <div class="container">
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html">Back to Home</a>
+                </div>
+                <div class="nav-buttons">
+                    <button id="language-toggle"><i class="fas fa-globe"></i> <span data-i18n="langButton">کوردی</span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="gallery-header">
+        <div class="container">
+            <h1 data-i18n="gallery-title">Gallery</h1>
+            <p>A full collection of our preserved heritage</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Images are loaded dynamically from script.js galleryItems -->
+            </div>
+            
+            <div class="gallery-footer" style="margin-top: 60px;">
+                <a href="index.html" class="btn">Return to Main Page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox"><i class="fas fa-times"></i></span>
+        <a class="prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="next"><i class="fas fa-chevron-right"></i></a>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
